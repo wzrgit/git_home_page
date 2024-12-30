@@ -20,7 +20,7 @@ body {
     justify-content: center;
     align-items: center;
     margin-bottom: 20vh;
-    background-image: url('../static/imgs/back_1.jpg');
+    background-image: url('../static/imgs/back_1.webp');
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* 视差滚动效果 */
