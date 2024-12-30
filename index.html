@@ -1,5 +1,88 @@
-<html>
-  <body>
-    Hi
-  </body>
-  </html>
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人主页</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#code">代码</a></li>
+            <li><a href="#notes">笔记</a></li>
+            <li><a href="#photos">照片</a></li>
+            <li><a href="#about">关于</a></li>
+        </ul>
+    </nav>
+
+    <section id="code" class="section">
+        <div class="content">
+            <h1>代码项目</h1>
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="static/imgs/code.jpg" alt="项目1">
+                    <h3>项目名称1</h3>
+                    <p>项目描述：这是一个使用React开发的Web应用...</p>
+                </div>
+                <div class="project-card">
+                    <img src="static/imgs/code.jpg" alt="项目2">
+                    <h3>项目名称2</h3>
+                    <p>项目描述：基于Python的数据分析工具...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="notes" class="section">
+        <div class="content">
+            <h1>学习笔记</h1>
+            <div class="notes-grid">
+                <article class="note-card">
+                    <img src="static/imgs/notes.jpg" alt="笔记1">
+                    <h3>机器学习基础</h3>
+                    <p>发布于 2024-03-20</p>
+                </article>
+                <article class="note-card">
+                    <img src="static/imgs/notes.jpg" alt="笔记2">
+                    <h3>Web开发技巧</h3>
+                    <p>发布于 2024-03-15</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="photos" class="section">
+        <div class="content">
+            <h1>摄影作品</h1>
+            <div class="photo-grid">
+                <div class="photo-item">
+                    <img src="static/imgs/photos.jpg" alt="摄影作品1">
+                </div>
+                <div class="photo-item">
+                    <img src="static/imgs/photos.jpg" alt="摄影作品2">
+                </div>
+                <div class="photo-item">
+                    <img src="static/imgs/photos.jpg" alt="摄影作品3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="content">
+            <img src="static/imgs/avatar.jpg" alt="个人头像" class="avatar">
+            <h1>关于我</h1>
+            <p class="bio">
+                你好！我是一名热爱技术的开发者。
+                擅长Web开发和机器学习，同时也喜欢摄影和写作。
+                目前正在探索更多有趣的项目和可能性。
+            </p>
+            <div class="social-links">
+                <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
