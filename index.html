@@ -1,88 +1,113 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html>
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>个人主页</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="static/style.css">
 </head>
+
 <body>
-    <nav>
-        <ul>
-            <li><a href="#code">代码</a></li>
-            <li><a href="#notes">笔记</a></li>
-            <li><a href="#photos">照片</a></li>
-            <li><a href="#about">关于</a></li>
-        </ul>
-    </nav>
+    <div id="main">
+        <section id="banner">
+            <div class="container">
+                <div class="row justify-content-center">
 
-    <section id="code" class="section">
-        <div class="content">
-            <h1>代码项目</h1>
-            <div class="project-grid">
-                <div class="project-card">
-                    <img src="static/imgs/code.webp" alt="项目1">
-                    <h3>项目名称1</h3>
-                    <p>项目描述：这是一个使用React开发的Web应用...</p>
-                </div>
-                <div class="project-card">
-                    <img src="static/imgs/code.webp" alt="项目2">
-                    <h3>项目名称2</h3>
-                    <p>项目描述：基于Python的数据分析工具...</p>
+                    <h1 class="display-4 fw-bold">
+                        求是 探索
+                    </h1>
+                    <h2 class=" mb-4">
+                        分享技术 记录生活
+                    </h2>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section id="notes" class="section">
-        <div class="content">
-            <h1>学习笔记</h1>
-            <div class="notes-grid">
-                <article class="note-card">
-                    <img src="static/imgs/notes.webp" alt="笔记1">
-                    <h3>机器学习基础</h3>
-                    <p>发布于 2024-03-20</p>
-                </article>
-                <article class="note-card">
-                    <img src="static/imgs/notes.webp" alt="笔记2">
-                    <h3>Web开发技巧</h3>
-                    <p>发布于 2024-03-15</p>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <section id="photos" class="section">
-        <div class="content">
-            <h1>摄影作品</h1>
-            <div class="photo-grid">
-                <div class="photo-item">
-                    <img src="static/imgs/photos.webp" alt="摄影作品1">
-                </div>
-                <div class="photo-item">
-                    <img src="static/imgs/photos.webp" alt="摄影作品2">
-                </div>
-                <div class="photo-item">
-                    <img src="static/imgs/photos.webp" alt="摄影作品3">
+        </section>
+        <section id="author">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <img class="author-avatar" alt="author" src="static/imgs/head.png">
+                        <h3 class="fw-bold mb-3">hi~</h3>
+                        <p class="lead text-muted mb-4">Software enginer</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section id="about" class="section">
-        <div class="content">
-            <img src="static/imgs/avatar.webp" alt="个人头像" class="avatar">
-            <h1>关于我</h1>
-            <p class="bio">
-                你好！我是一名热爱技术的开发者。
-                擅长Web开发和机器学习，同时也喜欢摄影和写作。
-                目前正在探索更多有趣的项目和可能性。
-            </p>
-            <div class="social-links">
-                <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-                <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+        </section>
+        <section id="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="card">
+                            <!-- <img src="..." class="card-img-top" alt="..."> -->
+                            <div class="w-card-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-braces" viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.114 8.063V7.9c1.005-.102 1.497-.615 1.497-1.6V4.503c0-1.094.39-1.538 1.354-1.538h.273V2h-.376C3.25 2 2.49 2.759 2.49 4.352v1.524c0 1.094-.376 1.456-1.49 1.456v1.299c1.114 0 1.49.362 1.49 1.456v1.524c0 1.593.759 2.352 2.372 2.352h.376v-.964h-.273c-.964 0-1.354-.444-1.354-1.538V9.663c0-.984-.492-1.497-1.497-1.6M13.886 7.9v.163c-1.005.103-1.497.616-1.497 1.6v1.798c0 1.094-.39 1.538-1.354 1.538h-.273v.964h.376c1.613 0 2.372-.759 2.372-2.352v-1.524c0-1.094.376-1.456 1.49-1.456V7.332c-1.114 0-1.49-.362-1.49-1.456V4.352C13.51 2.759 12.75 2 11.138 2h-.376v.964h.273c.964 0 1.354.444 1.354 1.538V6.3c0 .984.492 1.497 1.497 1.6" />
+                                </svg>
+                            </div>
+                            <div class="card-body">
+                                code
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card">
+                            <div class="w-card-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-camera-fill" viewBox="0 0 16 16">
+                                    <path d="M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                                    <path
+                                        d="M2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4zm.5 2a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1m9 2.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0" />
+                                </svg>
+                            </div>
+                            <div class="card-body">
+                                photo
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card">
+                            <div class="w-card-icon"><svg xmlns="http://www.w3.org/2000/svg" class="bi bi-pencil-square"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                                    <path fill-rule="evenodd"
+                                        d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z" />
+                                </svg></div>
+                            <div class="card-body">
+                                note
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card">
+                            <div class="w-card-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-person-vcard" viewBox="0 0 16 16">
+                                    <path
+                                        d="M5 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4m4-2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5M9 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4A.5.5 0 0 1 9 8m1 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5" />
+                                    <path
+                                        d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zM1 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H8.96q.04-.245.04-.5C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 1 1 12z" />
+                                </svg>
+                            </div>
+                            <div class="card-body">
+                                about
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+        <section id="footer">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <p class="text-muted mb-0">© 2025 求是探索</p>
+                        <p class="text-muted mb-0">Powered by <a href="     " target="_blank">求是探索</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 </body>
+
 </html>

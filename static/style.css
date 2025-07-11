@@ -1,209 +1,43 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: 'Arial', sans-serif;
-}
-
-.section {
-    min-height: 80vh;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20vh;
-    background-image: url('../static/imgs/back_1.webp');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed; /* 视差滚动效果 */
-    position: relative;
-}
-
-/* 为每个部分添加不同的遮罩层 */
-.section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1;
-}
-
-/* 调整内容层级，确保在遮罩层之上 */
-.section > * {
-    position: relative;
-    z-index: 2;
-}
-
-#code { background-color: #f8f9fa; }
-#notes { background-color: #e9ecef; }
-#photos { background-color: #dee2e6; }
-#about { background-color: #ced4da; }
-
-#code::before { background-color: rgba(248, 249, 250, 0.8); }
-#notes::before { background-color: rgba(233, 236, 239, 0.8); }
-#photos::before { background-color: rgba(222, 226, 230, 0.8); }
-#about::before { background-color: rgba(206, 212, 218, 0.8); }
-
-nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 1rem;
-    z-index: 1000;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-}
-
-nav a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: #666;
-}
-
-.content {
-    max-width: 1200px;
-    width: 90%;
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* 项目卡片样式 */
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
-}
-
-.project-card {
-    background: white;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.project-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 4px;
-}
-
-/* 笔记卡片样式 */
-.notes-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
-}
-
-.note-card {
-    background: white;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.note-card img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 4px;
-}
-
-/* 照片网格样式 */
-.photo-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
-    margin-top: 2rem;
-}
-
-.photo-item img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
-}
-
-.photo-item img:hover {
-    transform: scale(1.05);
-}
-
-/* 关于页面样式 */
-.avatar {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-bottom: 1rem;
-    border: 4px solid white;
-}
-
-.bio {
-    max-width: 600px;
-    text-align: center;
-    line-height: 1.6;
-    margin: 1rem 0;
-}
-
-.social-links {
-    display: flex;
-    gap: 1rem;
-    margin-top: 1rem;
-}
-
-.social-links a {
-    padding: 0.5rem 1rem;
-    background-color: #333;
+#banner {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
+    text-align: center;
+    padding: 80px 0 50px;
 }
 
-.social-links a:hover {
-    background-color: #666;
+#author {
+    margin-top: 45px;
 }
 
-/* 响应式调整 */
-@media (max-width: 768px) {
-    .content {
-        width: 95%;
-        padding: 1rem;
-    }
-    
-    .project-grid,
-    .notes-grid,
-    .photo-grid {
-        grid-template-columns: 1fr;
-    }
+.author-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #667eea;
+    margin-bottom: 1.5rem;
 }
 
-/* 为 about 部分单独设置高度 */
-#about {
-    min-height: 100vh;
-    margin-bottom: 0;  /* 最后一个部分不需要底部间距 */
+#content {
+    margin-top: 45px;
+    text-align: center;
+}
+
+#content card {
+    margin: 15px;
+}
+
+.w-card-icon {
+    margin: 20px auto 10px;
+}
+
+.w-card-icon svg {
+    width: 64px;
+    height: 64px;
+    fill: currentColor;
+}
+
+#footer {
+    background-color: #f8f9fa;
+    margin: 45px auto 10px;
 }
