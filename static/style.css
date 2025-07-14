@@ -41,12 +41,13 @@ body {
 #content .card {
     margin: 15px;
     background-color: val(--bs-tertiary-bg) !important;
-    transition: background-color 0.5s;
+    transition: background-color 0.8s;
+    height: 230px;
 }
 
 #content .card:hover {
     background-color: #c0b7e0 !important;
-    transition: background-color 0.5s;
+    transition: background-color 0.8s;
 }
 
 .w-card-icon {
@@ -57,6 +58,10 @@ body {
     width: 64px;
     height: 64px;
     fill: currentColor;
+}
+
+.card-body p {
+    font-family: '楷体';
 }
 
 #footer {
